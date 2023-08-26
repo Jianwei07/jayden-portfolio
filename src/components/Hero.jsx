@@ -4,12 +4,13 @@ import Linkedin from "../assets/linkedin.svg";
 
 function Hero() {
   return (
-    <div className="wrapper flex flex-col lg:flex-row justify-center items-center lg:items-left min h-screen px-6 lg:px-20">
+    // Content Left
+    <div className="flex flex-col lg:flex-row justify-center items-center lg:items-left min h-screen p-4 md:p-16 lg:p-16">
       <div className="content text-left lg:text-left max-w-xl lg:mr-6">
-        <h1 className="text-black text-4xl lg:text-5xl font-bold font-public-sans">
+        <h1 className="text-black text-4xl lg:text-5xl font-bold font-public-sans md:text-4xl lg:text-4xl">
           Front-End React and Flutter Mobile App Developer
         </h1>
-        <p className="text-grey py-4 text-sm md:text-base font-medium max-w-lg">
+        <p className="text-gray-500 py-5 text-sm md:text-base font-small font-public-sans md:text-lg lg:text-base max-w-lg">
           👋 Hey there! I'm Jayden Liaw, a Singapore-based software enthusiast
           on an exhilarating tech journey. Curiosity fuels me, and I thrive on
           teamwork. Currently exploring ReactJS and Flutter Mobile App to craft
@@ -19,6 +20,7 @@ function Hero() {
           <img
             src={Linkedin}
             alt="Linkedin Logo"
+            className="w-8 h-8 md:w-8 md:h-8 lg:w-10 lg:h-10"
             onClick={() =>
               window.open("https://www.linkedin.com/in/liawjianwei/", "_blank")
             }
@@ -26,12 +28,14 @@ function Hero() {
           <img
             src={GitLogo}
             alt="Github Logo"
+            className="w-8 h-8 md:w-8 md:h-8 lg:w-10 lg:h-10"
             onClick={() =>
               window.open("https://github.com/Jianwei07", "_blank")
             }
           />
         </div>
       </div>
+      {/* //content right */}
       <div className="w-80 h-80 border-4 border-white rounded-full shadow-lg overflow-hidden">
         <img
           src="/path/to/display-picture.jpg"

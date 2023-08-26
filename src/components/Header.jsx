@@ -5,8 +5,8 @@ const Header = ({ active }) => {
   return (
     <div className="nav-container">
       <nav className="navbar">
-        <div className="w-400 mx-auto p-3 bg-white dark:bg-black shadow-lg rounded-2xl flex items-center justify-items-center sm:w-80">
-          <ul className="flex justify-between w-full mt-3 mx-7">
+        <div className="w-400 mx-auto p-3 bg-white dark:bg-black shadow-lg rounded-2xl flex justify-center sm:w-80">
+          <ul className="flex justify-between w-full mt-2 mx-7">
             <NavLink to="/" active={active === "home"}>
               Home
             </NavLink>
@@ -31,7 +31,7 @@ const NavLink = ({ to, active, children }) => (
     to={to}
     className={`${
       active ? "text-indigo-600" : "text-gray-500 hover:text-gray-700"
-    } text-sm font-bold flex-grow`}
+    } text-sm font-bold`}
   >
     {children}
   </Link>
