@@ -2,6 +2,33 @@ import React from "react";
 import ProjectItems from "./Project-items";
 import ProjectData from "../data/Projects";
 import ProjectImage from "../assets/projects-image.svg";
+import ReactIcon from "../assets/react.svg";
+import MaterialUIIcon from "../assets/mui.svg";
+import NodeJSIcon from "../assets/nodejs.svg";
+import JavaScriptIcon from "../assets/javascript.svg";
+import FireBaseIcon from "../assets/firebase.svg";
+import FlutterIcon from "../assets/flutter.svg";
+import DartIcon from "../assets/dart.svg";
+import HtmlIcon from "../assets/html.svg";
+import CssIcon from "../assets/css.svg";
+import BootstrapIcon from "../assets/bootstrap.svg";
+import ViteIcon from "../assets/vitejs.svg";
+import TailwindIcon from "../assets/tailwindcss.svg";
+
+const stackIcons = {
+  ReactJS: ReactIcon,
+  "Material UI": MaterialUIIcon,
+  NodeJS: NodeJSIcon,
+  JavaScript: JavaScriptIcon,
+  FireBase: FireBaseIcon,
+  Flutter: FlutterIcon,
+  Dart: DartIcon,
+  HTML: HtmlIcon,
+  CSS: CssIcon,
+  Bootstrap: BootstrapIcon,
+  Vite: ViteIcon,
+  TailwindCSS: TailwindIcon,
+};
 
 function Projects() {
   return (
@@ -35,7 +62,14 @@ function Projects() {
           <ProjectItems
             title={item.title}
             imgUrl={item.imgUrl}
-            stack={item.stack}
+            stack={item.stack.map((stackName) => (
+              <img
+                key={stackName}
+                src={stackIcons[stackName]}
+                alt={stackName}
+                className="w-7 h-7"
+              />
+            ))}
             link={item.link}
           />
         ))}
