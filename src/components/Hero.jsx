@@ -55,7 +55,7 @@ function Hero() {
               />
             </div>
 
-            <div className="w-10 h-10 md:w-14 md:h-14 rounded-full border border-white bg-white shadow-md flex justify-center items-center">
+            <div className="w-10 h-10 md:w-14 md:h-14 rounded-full border border-white bg-white shadow-md flex justify-center items-center mb-4">
               <img
                 src={JavascriptIcon}
                 alt="JavaScript"
@@ -94,7 +94,7 @@ function Hero() {
         </div>
       </div>
       {/* Display Picture */}
-      <div className="w-40 h-40 md:w-80 md:h-80 border-4 border-white rounded-full shadow-lg overflow-hidden lg:ml-10 md:order-first lg:order-last">
+      <div className="w-40 h-40 md:w-80 md:h-80 border-4 border-white rounded-full shadow-lg overflow-hidden lg:ml-10 sm:order-first md:order-first lg:order-last">
         <img
           src={DisplayPicture}
           alt="Display Picture"
