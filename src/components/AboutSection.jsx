@@ -3,15 +3,15 @@ import React from "react";
 function AboutSection({ title, description, stackIcons, imageSrc, altText }) {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center lg:mt-4 sm:order-first md:order-first lg:order-last">
-      <div className="lg:w-1/3">
+      <div className="lg:w-1/3 ">
         <img
           src={imageSrc}
           alt={altText}
-          className="w-40 h-40 lg:w-48 lg:h-48"
+          className="w-full lg:w-2/5 h-auto lg:h-500 "
         />
       </div>
       <div className="lg:w-1/3 mt-4 lg:mt-0 lg:ml-4">
-        <h2 className="text-xl lg:text-2xl font-bold mb-4 md:text-3xl lg:text-xl">
+        <h2 className="text-xl lg:text-2xl font-bold mb-4 md:text-3xl lg:text-xl order-2 lg:order-2">
           {title}
         </h2>
         <div className="flex gap-2 mb-4">
