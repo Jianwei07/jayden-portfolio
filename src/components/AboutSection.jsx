@@ -2,33 +2,35 @@ import React from "react";
 
 function AboutSection({ title, description, stackIcons, imageSrc, altText }) {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center lg:mt-4 sm:order-first md:order-first lg:order-last">
-      <div className="lg:w-1/3 ">
-        <img
-          src={imageSrc}
-          alt={altText}
-          className="w-full lg:w-2/5 h-auto lg:h-500 "
-        />
+    <div className="flex flex-col lg:flex-row items-center justify-center lg:mt-4 h-screen lg:h-[70]">
+      <div className="flex flex-col lg:flex-row gap-10 items-center lg:w-2/5 mx-auto">
+        <img src={imageSrc} alt={altText} className="w-full h-auto lg:h-200" />
       </div>
-      <div className="lg:w-1/3 mt-4 lg:mt-0 lg:ml-4">
-        <h2 className="text-xl lg:text-2xl font-bold mb-4 md:text-3xl lg:text-xl order-2 lg:order-2">
-          {title}
-        </h2>
-        <div className="flex gap-2 mb-4">
-          {stackIcons.map((icon, index) => (
-            <img
-              key={index}
-              src={icon.src}
-              alt={icon.alt}
-              className="w-6 h-6 lg:w-8 lg:h-8"
-            />
-          ))}
+      <div className="lg:w-3/5 mt-4 lg:mt-0 lg:ml-4 mx-auto">
+        <div className="w-[80%] mx-auto">
+          <h2 className="text-[36px] text-center md:text-left lg:text-left font-bold mb-2">
+            {title}
+          </h2>
+          <div className="flex items-center gap-2 mt-2 mb-2">
+            {stackIcons.map((icon, index) => (
+              <img
+                key={index}
+                src={icon.src}
+                alt={icon.alt}
+                className="w-8 h-8 lg:w-10 lg:h-10 text-blue"
+              />
+            ))}
+          </div>
         </div>
-        <ul className="list-disc list-inside text-gray-500 text-sm md:text-base lg:text-base max-w-lg mb-4 font-public-sans">
-          {description.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-        </ul>
+        <div className="lg:mt-0 lg:ml-4 mx-auto text-left">
+          <div className="px-6 w-[90%] mx-auto">
+            <ul className="list-disc list-inside text-gray-700 py-2 text-[18px]">
+              {description.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
