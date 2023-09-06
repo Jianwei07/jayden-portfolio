@@ -44,7 +44,7 @@ function About() {
             fontWeight: "bold",
           }}
         >
-          About Me
+          My Tech Journey
         </h2>
       </div>
       <AboutSection

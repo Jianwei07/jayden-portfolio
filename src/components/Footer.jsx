@@ -48,7 +48,7 @@ function Footer() {
         <IconButton
           color="inherit"
           onClick={scrollToTop}
-          style={{ color: "white", boxShadow: "0px 4px 6px rgba(0,0,0,0.5)" }}
+          style={{ color: "white", boxShadow: "0px 4px 6px rgba(0,0,0,0.3)" }}
         >
           <KeyboardArrowUpIcon />
         </IconButton>

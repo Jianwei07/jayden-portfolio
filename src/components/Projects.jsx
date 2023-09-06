@@ -57,7 +57,7 @@ function Projects() {
               <h2 className="text-[36px] text-center md:text-left lg:text-left font-bold mb-2">
                 Exploring Tech Horizons: My Development Endeavors
               </h2>
-              <p className="text-gray-700 py-2 text-[18px] md:text-base lg:text-base  text-left font-public-sans">
+              <p className="text-gray-700 py-2 text-[18px] text-left font-public-sans">
                 In my limited but promising journey, I've contributed to
                 open-source projects. As a believer in growth through
                 collaboration, each project is an invitation to learn and share.
