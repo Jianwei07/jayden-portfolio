@@ -11,7 +11,7 @@ function AboutSection({ title, description, stackIcons, imageSrc, altText }) {
           <h2 className="text-[36px] text-center md:text-left lg:text-left font-bold mb-2">
             {title}
           </h2>
-          <div className="flex items-center flex-wrap gap-2 mt-2 mb-2">
+          <div className="flex items-center flex-wrap gap-6 mt-2 mb-2">
             {stackIcons.map((icon, index) => (
               <img
                 key={index}

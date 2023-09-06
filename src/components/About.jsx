@@ -50,23 +50,23 @@ function About() {
       <AboutSection
         title="Full Stack Development"
         description={[
-          "Experienced in building responsive websites using ReactJS and UI components like MUI and TailwindCSS.",
+          "Experienced in building responsive websites using ReactJS with UI components like MUI and TailwindCSS.",
           "Learning and developing mobile applications using Flutter and Dart using inhouse UI components.",
-          "Experienced in creating robust application backends using technologies like Node.js, Firebase, and MongoDB..",
+          "Experienced in creating robust application backends using technologies like Node.js, Firebase, and MongoDB.",
         ]}
         stackIcons={[
-          { src: HtmlIcon, alt: "HTML" },
-          { src: CssIcon, alt: "CSS" },
-          { src: BootstrapIcon, alt: "Bootstrap" },
-          { src: JavaScriptIcon, alt: "JavaScript" },
-          { src: ReactIcon, alt: "React" },
-          { src: MaterialUIIcon, alt: "Material UI" },
-          { src: TailwindIcon, alt: "Tailwind CSS" },
-          { src: NodeJSIcon, alt: "NodeJS" },
-          { src: ViteIcon, alt: "Vite" },
-          { src: Springboot, alt: "SpringBoot" },
-          { src: FlutterIcon, alt: "Flutter" },
-          { src: DartIcon, alt: "Dart" },
+          { src: HtmlIcon, alt: "HTML", title: "HTML" },
+          { src: CssIcon, alt: "CSS", title: "CSS" },
+          { src: BootstrapIcon, alt: "Bootstrap", title: "Bootstrap" },
+          { src: JavaScriptIcon, alt: "JavaScript", title: "JavaScript" },
+          { src: ReactIcon, alt: "React", title: "React" },
+          { src: MaterialUIIcon, alt: "Material UI", title: "Material UI" },
+          { src: TailwindIcon, alt: "Tailwind CSS", title: "Tailwind CSS" },
+          { src: NodeJSIcon, alt: "NodeJS", title: "NodeJS" },
+          { src: ViteIcon, alt: "Vite", title: "Vite" },
+          { src: Springboot, alt: "SpringBoot", title: "SpringBoot" },
+          { src: FlutterIcon, alt: "Flutter", title: "Flutter" },
+          { src: DartIcon, alt: "Dart", title: "Dart" },
         ]}
         imageSrc={FullStackImage}
         altText="Full Stack Development Image"
