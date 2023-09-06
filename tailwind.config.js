@@ -7,8 +7,6 @@ export default {
       publicSans: ["Public Sans", "sans-serif"],
     },
     container: {
-      center: true,
-      padding: "4rem",
       extend: {
         colors: {
           black: "#000000",

@@ -35,6 +35,18 @@ import Asana from "../assets/asana.svg";
 function About() {
   return (
     <div className="px-4 md:px-8 lg:px-16">
+      <div className="flex justify-center items-center">
+        <h2
+          style={{
+            color: "#147EFB",
+            fontSize: "2rem",
+            margin: "0",
+            fontWeight: "bold",
+          }}
+        >
+          About Me
+        </h2>
+      </div>
       <AboutSection
         title="Full Stack Development"
         description={[

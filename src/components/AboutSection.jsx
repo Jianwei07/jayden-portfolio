@@ -2,8 +2,8 @@ import React from "react";
 
 function AboutSection({ title, description, stackIcons, imageSrc, altText }) {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center lg:mt-4 h-screen lg:h-[70]">
-      <div className="flex flex-col lg:flex-row gap-10 items-center lg:w-2/5 mx-auto">
+    <div className="flex flex-col lg:flex-row items-center justify-center lg:mt-4">
+      <div className="lg:w-2/5 mx-auto">
         <img src={imageSrc} alt={altText} className="w-full h-auto lg:h-200" />
       </div>
       <div className="lg:w-3/5 mt-4 lg:mt-0 lg:ml-4 mx-auto">
@@ -11,7 +11,7 @@ function AboutSection({ title, description, stackIcons, imageSrc, altText }) {
           <h2 className="text-[36px] text-center md:text-left lg:text-left font-bold mb-2">
             {title}
           </h2>
-          <div className="flex items-center gap-2 mt-2 mb-2">
+          <div className="flex items-center flex-wrap gap-2 mt-2 mb-2">
             {stackIcons.map((icon, index) => (
               <img
                 key={index}

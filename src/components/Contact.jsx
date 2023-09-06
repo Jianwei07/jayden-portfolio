@@ -1,6 +1,65 @@
 import React from "react";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Contact() {
-  return <div>Contact</div>;
+  return (
+    <div className="flex flex-col items-center justify-center p-8 py-20">
+      <div className="flex justify-center items-center">
+        <h2
+          style={{
+            color: "#147EFB",
+            fontSize: "2rem",
+            margin: "0",
+            fontWeight: "bold",
+          }}
+        >
+          Contact
+        </h2>
+      </div>
+      <p className="text-gray-700 py-2 text-[18px] md:text-base lg:text-base mt-4">
+        Thank you for your time! I'm open to a variety of opportunities and
+        collaborations within the tech industry. Here's how you can get in touch
+        with me:
+      </p>
+      <div className="flex justify-center items-center mt-4 space-x-4">
+        <a
+          href="mailto:your.email@example.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Email"
+        >
+          <EmailIcon style={{ fontSize: "2rem", color: "#2D2E32" }} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yourlinkedinprofile/"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="LinkedIn"
+        >
+          <LinkedInIcon style={{ fontSize: "2rem", color: "#2D2E32" }} />
+        </a>
+        <a
+          href="https://github.com/yourgithubprofile"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="GitHub"
+        >
+          <GitHubIcon style={{ fontSize: "2rem", color: "#2D2E32" }} />
+        </a>
+      </div>
+      <div className="text-gray-700 py-2 text-[18px] md:text-base lg:text-base mt-4">
+        I'm excited about the following opportunities:
+        <ul className="list-disc list-inside text-center text-gray-700 mt-2 px-2">
+          <li>Project Collaborations</li>
+          <li>Event Invitations</li>
+          <li>Mentorship</li>
+          <li>Job Opportunities</li>
+        </ul>
+      </div>
+    </div>
+  );
 }
+
 export default Contact;

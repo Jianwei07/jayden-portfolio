@@ -34,6 +34,18 @@ function Projects() {
   return (
     <div className="flex flex-col items-center justify-center md:p-16 lg:p-16">
       <div className="w-full text-center py-6">
+        <div className="flex justify-center items-center">
+          <h2
+            style={{
+              color: "#147EFB",
+              fontSize: "2rem",
+              margin: "0",
+              fontWeight: "bold",
+            }}
+          >
+            My Portfolio
+          </h2>
+        </div>
         <div className="flex flex-col lg:flex-row gap-10 items-center justify-center">
           <img
             src={ProjectImage}
@@ -42,10 +54,10 @@ function Projects() {
           />
           <div className="lg:ml-10 order-2 lg:order-2">
             <div className="lg:w-4/5">
-              <h2 className="text-3xl md:text-2xl lg:text-3xl font-bold mb-2 lg:text-left">
+              <h2 className="text-[36px] text-center md:text-left lg:text-left font-bold mb-2">
                 Exploring Tech Horizons: My Development Endeavors
               </h2>
-              <p className="text-gray-500 py-1 text-sm md:text-base lg:text-base  font-small font-public-sans">
+              <p className="text-gray-700 py-2 text-[18px] md:text-base lg:text-base  text-left font-public-sans">
                 In my limited but promising journey, I've contributed to
                 open-source projects. As a believer in growth through
                 collaboration, each project is an invitation to learn and share.
