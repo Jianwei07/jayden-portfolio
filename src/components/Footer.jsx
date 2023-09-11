@@ -19,7 +19,7 @@ function Footer() {
         backgroundColor: "#2D2E32",
         color: "white",
         textAlign: "center",
-        padding: "30px 100px",
+        padding: "20px 80px",
         fontSize: "0.9rem",
         display: "flex",
         justifyContent: "space-between",
@@ -27,8 +27,9 @@ function Footer() {
       }}
     >
       <div>
-        <span>Copyright &copy; {currentYear}. All Rights Reserved.</span>
-        <br></br>
+        <span style={{ marginRight: "10px" }}>
+          Copyright &copy; {currentYear}. All Rights Reserved.
+        </span>
         <span className="flex flex-row items-center">
           images by{" "}
           <img
