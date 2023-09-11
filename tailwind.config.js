@@ -16,9 +16,9 @@ export default {
           dark_gray: "#B7C5D3",
           blue: "#147EFB",
           grey_blue: "#B7C4CF",
-        },
-        backgroundImage: {
-          primaryLinear: "linear-gradient(180deg, #B6CCF5 0.48%, #D5E3F1 100%)",
+          F2EAD3: "#F2EAD3",
+          dfdfbf: "#DFD7BF",
+          "3f2305": "#3F2305",
         },
       },
     },

@@ -9,7 +9,7 @@ function ProjectItems({ title, imgUrl, stack, link }) {
         className="w-full h-36 md:h-48 object-cover cursor-pointer"
         onClick={() => window.open(link, "_blank")}
       />
-      <div className="w-full p-4">
+      <div className="w-full px-4 py-2">
         <h3 className="text-lg md:text-xl mb-2 md:mb-3 font-semibold">
           {title}
         </h3>

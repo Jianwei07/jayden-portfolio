@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header style={{ paddingTop: "30px" }} />
+        <Header />
         <Hero active="home" />
         <About active="about" />
         <Projects active="projects" />

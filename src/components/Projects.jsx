@@ -14,6 +14,7 @@ import CssIcon from "../assets/css.svg";
 import BootstrapIcon from "../assets/bootstrap.svg";
 import ViteIcon from "../assets/vitejs.svg";
 import TailwindIcon from "../assets/tailwindcss.svg";
+import InnovPay from "../assets/Innovpay.png";
 
 const stackIcons = {
   ReactJS: ReactIcon,
@@ -28,11 +29,12 @@ const stackIcons = {
   Bootstrap: BootstrapIcon,
   Vite: ViteIcon,
   TailwindCSS: TailwindIcon,
+  InnovPay: InnovPay,
 };
 
 function Projects() {
   return (
-    <div className="flex flex-col items-center justify-center md:p-16 lg:p-16">
+    <div className="bg-amber-50 flex flex-col items-center justify-center md:p-16 lg:p-16">
       <div className="w-full text-center py-6">
         <div className="flex justify-center items-center">
           <h2
@@ -57,7 +59,7 @@ function Projects() {
               <h2 className="text-[36px] text-center md:text-left lg:text-left font-bold mb-2">
                 Exploring Tech Horizons: My Development Endeavors
               </h2>
-              <p className="text-gray-700 py-2 text-[18px] text-left font-public-sans">
+              <p className="text-gray-700 py-2 text-[17px] text-left font-public-sans">
                 In my limited but promising journey, I've contributed to
                 open-source projects. As a believer in growth through
                 collaboration, each project is an invitation to learn and share.

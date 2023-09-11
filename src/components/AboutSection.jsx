@@ -24,7 +24,7 @@ function AboutSection({ title, description, stackIcons, imageSrc, altText }) {
         </div>
         <div className="lg:mt-0 lg:ml-4 mx-auto text-left">
           <div className="px-6 w-[90%] mx-auto">
-            <ul className="list-disc list-inside text-gray-700 py-2 text-[18px]">
+            <ul className="list-disc list-inside text-gray-700 py-2 text-[16px]">
               {description.map((point, index) => (
                 <li key={index}>{point}</li>
               ))}

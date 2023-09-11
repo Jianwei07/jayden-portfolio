@@ -1,9 +1,9 @@
 export default [
   {
     title: "InnovPay Banking Web Application",
-    imgUrl: "",
+    imgUrl: "src/assets/Innovpay.png",
     stack: ["ReactJS", "Material UI", "NodeJS", "JavaScript", "FireBase"],
-    link: "",
+    link: "https://jianwei07.github.io/capstone-1-banking-app/",
   },
   {
     title: "Simplify - Simple To Do List Google Extension",
@@ -13,7 +13,7 @@ export default [
   },
   {
     title: "Personal Portfolio Website",
-    imgUrl: "",
+    imgUrl: "src/assets/PersonalWebsite.png",
     stack: ["ReactJS", "Vite", "TailwindCSS", "JavaScript"],
     link: "https://codeshare.io/1Yr6k3https://codeshare.io/1Yr6k3",
   },

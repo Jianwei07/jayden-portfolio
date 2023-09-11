@@ -4,6 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { IconButton } from "@mui/material";
 import { animateScroll as scroll } from "react-scroll";
+import freepik from "../assets/freepik.svg";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -18,8 +19,8 @@ function Footer() {
         backgroundColor: "#2D2E32",
         color: "white",
         textAlign: "center",
-        padding: "20px 100px", // Recommended height with 20px top and bottom padding
-        fontSize: "0.9rem", // Adjust the font size as needed
+        padding: "30px 100px",
+        fontSize: "0.9rem",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -27,23 +28,37 @@ function Footer() {
     >
       <div>
         <span>Copyright &copy; {currentYear}. All Rights Reserved.</span>
+        <br></br>
+        <span className="flex flex-row items-center">
+          images by{" "}
+          <img
+            src={freepik}
+            alt="Freepik"
+            style={{
+              width: "50px",
+              height: "50px",
+              verticalAlign: "middle",
+              marginLeft: "5px",
+            }}
+          />
+        </span>
       </div>
       <div>
         <a
-          href="https://www.linkedin.com/your-linkedin-profile"
+          href="https://www.linkedin.com/in/liawjianwei/"
           target="_blank"
           rel="noopener noreferrer"
           style={{ marginRight: "1rem", color: "white" }}
         >
-          <LinkedInIcon style={{ fontSize: "1.5rem" }} />
+          <LinkedInIcon style={{ fontSize: "2rem" }} />
         </a>
         <a
-          href="https://github.com/your-github-profile"
+          href="https://github.com/Jianwei07"
           target="_blank"
           rel="noopener noreferrer"
           style={{ marginRight: "1rem", color: "white" }}
         >
-          <GitHubIcon style={{ fontSize: "1.5rem" }} />
+          <GitHubIcon style={{ fontSize: "2rem" }} />
         </a>
         <IconButton
           color="inherit"

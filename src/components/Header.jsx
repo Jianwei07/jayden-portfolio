@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Header = ({ active }) => {
   return (
-    <div className="nav-container">
+    <div className="nav-container bg-amber-50 p-3">
       <nav className="navbar">
-        <div className="w-400 mx-auto p-3 bg-white dark:bg-black shadow-lg rounded-2xl flex justify-center sm:w-80">
-          <ul className="flex justify-between w-full mt-2 mx-7">
+        <div className="w-400 mx-auto p-2 bg-white dark:bg-black shadow-md rounded-2xl flex justify-center sm:w-80">
+          <ul className="flex justify-between w-full mt-1 mb-1 mx-7">
             <NavLink to="/" active={active === "home"}>
               Home
             </NavLink>

@@ -34,7 +34,7 @@ import Asana from "../assets/asana.svg";
 
 function About() {
   return (
-    <div className="px-4 md:px-8 lg:px-16">
+    <div className="bg-amber-50 px-4 md:px-8 lg:px-16">
       <div className="flex justify-center items-center">
         <h2
           style={{

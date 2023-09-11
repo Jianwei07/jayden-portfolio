@@ -5,7 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Contact() {
   return (
-    <div className="flex flex-col items-center justify-center p-8 py-20">
+    <div className="bg-amber-100 flex flex-col items-center justify-center h-[85vh] p-8 py-20">
       <div className="flex justify-center items-center">
         <h2
           style={{
@@ -15,17 +15,17 @@ function Contact() {
             fontWeight: "bold",
           }}
         >
-          Contact
+          Contact Me
         </h2>
       </div>
-      <p className="text-gray-700 py-2 text-[18px] md:text-base lg:text-base mt-4">
+      <p className="text-gray-700 py-2 text-[21px] md:text-base lg:text-base mt-4">
         Thank you for your time! I'm open to a variety of opportunities and
         collaborations within the tech industry. Here's how you can get in touch
         with me:
       </p>
       <div className="flex justify-center items-center mt-4 space-x-4">
         <a
-          href="mailto:your.email@example.com"
+          href="liawjianwei@outlook.com"
           target="_blank"
           rel="noopener noreferrer"
           title="Email"
@@ -33,7 +33,7 @@ function Contact() {
           <EmailIcon style={{ fontSize: "2rem", color: "#2D2E32" }} />
         </a>
         <a
-          href="https://www.linkedin.com/in/yourlinkedinprofile/"
+          href="https://www.linkedin.com/in/liawjianwei/"
           target="_blank"
           rel="noopener noreferrer"
           title="LinkedIn"
@@ -41,7 +41,7 @@ function Contact() {
           <LinkedInIcon style={{ fontSize: "2rem", color: "#2D2E32" }} />
         </a>
         <a
-          href="https://github.com/yourgithubprofile"
+          href="https://github.com/Jianwei07"
           target="_blank"
           rel="noopener noreferrer"
           title="GitHub"
