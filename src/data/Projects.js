@@ -7,7 +7,7 @@ export default [
   },
   {
     title: "Bank Command Line Interface(CLI) Terminal",
-    imgUrl: "src/assets/Innovpay.png",
+    imgUrl: "src/assets/javaTeller.png",
     stack: ["Java", "Oracle", "Powershell", "Github"],
     link: "https://jianwei07.github.io/capstone-1-banking-app/",
   },

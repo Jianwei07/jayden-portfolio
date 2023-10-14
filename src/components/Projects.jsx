@@ -19,6 +19,7 @@ import PowershellIcon from "../assets/powershell.svg";
 import JavaIcon from "../assets/java.svg";
 import GithubIcon from "../assets/github.svg";
 import OracleIcon from "../assets/oracle.svg";
+import TellerIcon from "../assets/javaTeller.png";
 
 const stackIcons = {
   ReactJS: ReactIcon,
@@ -38,6 +39,7 @@ const stackIcons = {
   TailwindCSS: TailwindIcon,
   InnovPay: InnovPay,
   Powershell: PowershellIcon,
+  Teller: TellerIcon,
 };
 
 function Projects() {
