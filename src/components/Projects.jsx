@@ -15,21 +15,29 @@ import BootstrapIcon from "../assets/bootstrap.svg";
 import ViteIcon from "../assets/vitejs.svg";
 import TailwindIcon from "../assets/tailwindcss.svg";
 import InnovPay from "../assets/Innovpay.png";
+import PowershellIcon from "../assets/powershell.svg";
+import JavaIcon from "../assets/java.svg";
+import GithubIcon from "../assets/github.svg";
+import OracleIcon from "../assets/oracle.svg";
 
 const stackIcons = {
   ReactJS: ReactIcon,
   "Material UI": MaterialUIIcon,
   NodeJS: NodeJSIcon,
+  Java: JavaIcon,
   JavaScript: JavaScriptIcon,
   FireBase: FireBaseIcon,
   Flutter: FlutterIcon,
   Dart: DartIcon,
   HTML: HtmlIcon,
   CSS: CssIcon,
+  Github: GithubIcon,
+  Oracle: OracleIcon,
   Bootstrap: BootstrapIcon,
   Vite: ViteIcon,
   TailwindCSS: TailwindIcon,
   InnovPay: InnovPay,
+  Powershell: PowershellIcon,
 };
 
 function Projects() {
