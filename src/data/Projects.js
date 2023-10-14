@@ -20,20 +20,20 @@ export default [
   },
   {
     title: "Expenses Tracker Mobile Application",
-    imgUrl: "",
-    stack: ["Flutter", "Dart"],
-    link: "https://codeshare.io/1Yr6k3https://codeshare.io/1Yr6k3",
+    imgUrl: "src/assets/ExpenseTracker.png",
+    stack: ["Flutter", "Dart", "Andriod"],
+    link: "https://drive.google.com/file/d/1vEnGLUHt-2Scu44vkOwjehgC7VU30Kb3/view?usp=drive_link",
   },
-  {
-    title: "Simplify - Simple To Do List Google Extension",
-    imgUrl: "",
-    stack: ["ReactJS", "Material UI", "JavaScript"],
-    link: "https://codeshare.io/1Yr6k3",
-  },
-  {
-    title: "TinDog Website",
-    imgUrl: "",
-    stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "NodeJS"],
-    link: "https://codeshare.io/1Yr6k3https://codeshare.io/1Yr6k3",
-  },
+  // {
+  //   title: "Simplify - Simple To Do List Google Extension",
+  //   imgUrl: "",
+  //   stack: ["ReactJS", "Material UI", "JavaScript"],
+  //   link: "https://codeshare.io/1Yr6k3",
+  // },
+  // {
+  //   title: "TinDog Website",
+  //   imgUrl: "",
+  //   stack: ["HTML", "CSS", "Bootstrap", "JavaScript", "NodeJS"],
+  //   link: "https://codeshare.io/1Yr6k3https://codeshare.io/1Yr6k3",
+  // },
 ];
