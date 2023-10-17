@@ -5,4 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "https://jianwei07.github.io/jayden-portfolio/",
   plugins: [react()],
+  assetsInclude: ["**/*.png"],
 });

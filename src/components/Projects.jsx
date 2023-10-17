@@ -14,12 +14,10 @@ import CssIcon from "../assets/css.svg";
 import BootstrapIcon from "../assets/bootstrap.svg";
 import ViteIcon from "../assets/vitejs.svg";
 import TailwindIcon from "../assets/tailwindcss.svg";
-import InnovPay from "../assets/Innovpay.png";
 import PowershellIcon from "../assets/powershell.svg";
 import JavaIcon from "../assets/java.svg";
 import GithubIcon from "../assets/github.svg";
 import OracleIcon from "../assets/oracle.svg";
-import TellerIcon from "../assets/javaTeller.png";
 import AndriodIcon from "../assets/android.svg";
 
 const stackIcons = {
@@ -38,9 +36,7 @@ const stackIcons = {
   Bootstrap: BootstrapIcon,
   Vite: ViteIcon,
   TailwindCSS: TailwindIcon,
-  InnovPay: InnovPay,
   Powershell: PowershellIcon,
-  Teller: TellerIcon,
   Andriod: AndriodIcon,
 };
 
