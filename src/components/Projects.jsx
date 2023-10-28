@@ -80,7 +80,8 @@ function Projects() {
                   Following are the projects that I have worked on, I have
                   included links to projects that are up and running for
                   awaiting deployment projects, videos and github repo links are
-                  provided. Click to find out more!
+                  provided. Click to find out more, please feel free to reach me
+                  if you need any information.
                 </p>
               </p>
             </div>
