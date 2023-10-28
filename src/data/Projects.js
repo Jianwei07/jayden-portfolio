@@ -25,7 +25,7 @@ export default [
   {
     title: "Expenses Tracker Mobile Application",
     imgUrl: ExpenseTrackerImage,
-    stack: ["Flutter", "Dart", "Andriod"],
+    stack: ["Flutter", "Dart", "AndriodStudio"],
     link: "https://drive.google.com/file/d/1vEnGLUHt-2Scu44vkOwjehgC7VU30Kb3/view?usp=drive_link",
   },
 ];

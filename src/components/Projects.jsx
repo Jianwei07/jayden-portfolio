@@ -37,7 +37,7 @@ const stackIcons = {
   Vite: ViteIcon,
   TailwindCSS: TailwindIcon,
   Powershell: PowershellIcon,
-  Andriod: AndriodIcon,
+  AndriodStudio: AndriodIcon,
 };
 
 function Projects() {
@@ -74,6 +74,14 @@ function Projects() {
                 Be part of the progress by exploring the code, suggesting
                 enhancements, and providing feedback. Let's nourish learning
                 together and seek mentorship to expand our horizons!
+                <br />
+                <br />
+                <p>
+                  Following are the projects that I have worked on, I have
+                  included links to projects that are up and running for
+                  awaiting deployment projects, videos and github repo links are
+                  provided. Click to find out more!
+                </p>
               </p>
             </div>
           </div>
@@ -85,12 +93,17 @@ function Projects() {
             title={item.title}
             imgUrl={item.imgUrl}
             stack={item.stack.map((stackName) => (
-              <img
-                key={stackName}
-                src={stackIcons[stackName]}
-                alt={stackName}
-                className="w-7 h-7"
-              />
+              <div className="relative group">
+                <img
+                  key={stackName}
+                  src={stackIcons[stackName]}
+                  alt={stackName}
+                  className="w-7 h-7 group-hover:opacity-50"
+                />
+                <span className="hidden group-hover:block absolute top-0 right-0 bg-black text-white p-2 rounded mt-8 transform translate-x-2 -translate-y-20">
+                  {stackName}
+                </span>
+              </div>
             ))}
             link={item.link}
           />
