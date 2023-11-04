@@ -27,6 +27,10 @@ import GoogleCloud from "../assets/googlecloud.svg";
 import FireBaseIcon from "../assets/firebase.svg";
 import MongoDBIcon from "../assets/mongodb.svg";
 import Springboot from "../assets/springboot.svg";
+import Salesfunnel from "../assets/salesfunnel.svg";
+import GoogleAds from "../assets/googleads.svg";
+import GoogleAnalytics from "../assets/google-analytics.svg";
+import GoogleMarket from "../assets/googlemarket.svg";
 
 import Miro from "../assets/miro.svg";
 import Figma from "../assets/figma.svg";
@@ -121,6 +125,38 @@ function About() {
         ]}
         imageSrc={uiux}
         altText="UI/UX Image"
+      />
+
+      <AboutSection
+        title="Digital Marketing Professional"
+        description={[
+          <a
+            href="https://drive.google.com/drive/folders/1-2AVBsKy8SG75QEmtcFjBkcvcWxfvjFW?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Certified in Google SEO, SEM, and Analytics, with expertise gained
+            from a digital marketing strategies course taught by a renowned
+            industry expert.{" "}
+            <strong>
+              <u>Click here</u>
+            </strong>{" "}
+            to view my certifications.
+          </a>,
+          "Proficient in generating website traffic and high-quality leads through the strategic application of the Angels and Devils Cocktail ideology, effectively simulating emotions to engage audiences.",
+          "Demonstrated understanding of sales funnels, with the ability to optimize each layer for guiding users towards making a purchase.",
+          "Skilled in optimizing digital marketing campaigns, employing advanced strategies to enhance online visibility and engagement for effective results and conversions.",
+          "Experienced in analyzing data and using insights from Google Analytics to refine marketing approaches, ensuring data-driven decision-making.",
+          "Focused on leveraging digital marketing techniques to strengthen brand presence and drive revenue growth, emphasizing a results-oriented approach.",
+        ]}
+        stackIcons={[
+          { src: GoogleMarket, alt: "Google Marketing Tools" },
+          { src: GoogleAds, alt: "Google Ads" },
+          { src: GoogleAnalytics, alt: "Google Analytics Tool" },
+          { src: GoogleCloud, alt: "Google Cloud Platform" },
+        ]}
+        imageSrc={Salesfunnel}
+        altText="Digital Marketing"
       />
     </div>
   );
