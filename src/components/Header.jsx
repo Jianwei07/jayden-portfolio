@@ -1,6 +1,11 @@
 import React from "react";
 
-const Header = ({ scrollToAbout, scrollToProjects, scrollToContact }) => {
+const Header = ({
+  scrollToAbout,
+  scrollToProjects,
+  scrollToContact,
+  openResumeLink,
+}) => {
   return (
     <div className="nav-container bg-amber-50 p-3">
       <nav className="navbar">
@@ -9,6 +14,7 @@ const Header = ({ scrollToAbout, scrollToProjects, scrollToContact }) => {
             <NavLink onClick={scrollToAbout}>About</NavLink>
             <NavLink onClick={scrollToProjects}>Projects</NavLink>
             <NavLink onClick={scrollToContact}>Contact</NavLink>
+            <NavLink onClick={openResumeLink}>Resume</NavLink>
           </ul>
         </div>
       </nav>

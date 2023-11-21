@@ -17,6 +17,12 @@ export default [
     link: "https://drive.google.com/drive/folders/1_pMESYfD8Ur2vu1M29fcoVPOohCc9_FS?usp=drive_link",
   },
   {
+    title: "Banking Web Application using Java Spring Boot",
+    imgUrl: JavaTellerImage,
+    stack: ["Java", "Oracle", "Springboot", "Github"],
+    link: "https://drive.google.com/drive/folders/1_pMESYfD8Ur2vu1M29fcoVPOohCc9_FS?usp=drive_link",
+  },
+  {
     title: "Personal Portfolio Website",
     imgUrl: PersonalWebsiteImage,
     stack: ["ReactJS", "Vite", "TailwindCSS", "JavaScript"],

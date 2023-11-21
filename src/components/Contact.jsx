@@ -25,7 +25,7 @@ function Contact() {
       </p>
       <div className="flex justify-center items-center mt-4 space-x-4">
         <a
-          href="liawjianwei@outlook.com"
+          href="mailto:liawjianwei@outlook.com"
           target="_blank"
           rel="noopener noreferrer"
           title="Email"

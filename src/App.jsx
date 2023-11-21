@@ -14,12 +14,20 @@ function App() {
     }
   };
 
+  const openResumeLink = () => {
+    window.open(
+      "https://drive.google.com/drive/folders/1f20Htb_lJvoSf-iWl_ibBi3unSCKhojq?usp=drive_link",
+      "_blank"
+    );
+  };
+
   return (
     <div className="App">
       <Header
         scrollToAbout={() => scrollToSection("about")}
         scrollToProjects={() => scrollToSection("projects")}
         scrollToContact={() => scrollToSection("contact")}
+        openResumeLink={openResumeLink}
       />
       <Hero />
       <div id="about">

@@ -19,6 +19,7 @@ import JavaIcon from "../assets/java.svg";
 import GithubIcon from "../assets/github.svg";
 import OracleIcon from "../assets/oracle.svg";
 import AndriodIcon from "../assets/android.svg";
+import SpringbootIcon from "../assets/springboot.svg";
 
 const stackIcons = {
   ReactJS: ReactIcon,
@@ -38,6 +39,7 @@ const stackIcons = {
   TailwindCSS: TailwindIcon,
   Powershell: PowershellIcon,
   AndriodStudio: AndriodIcon,
+  Springboot: SpringbootIcon,
 };
 
 function Projects() {
