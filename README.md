@@ -12,7 +12,7 @@ Below, you'll find some information about the project, how to set it up locally,
 - **JavaScript:** JavaScript is used for adding interactivity and dynamic functionality to the website.
 
 
-##References Used 
+## References Used 
 - https://ashutoshhathidara.com/#/home - inspiring resume concept which insipres me to design my own portfolio
 - https://www.youtube.com/watch?v=b0pkpcD8Ms4&t=1627s - video by ForrestKnight on guiding and teaching how to setup tailwindcss project using modern build tool, VITE instead of npm/yarn.
 - ForrestKnight taught me on tailwindcss logic to optimize device layouts, columns and rows and code architecture.
@@ -23,4 +23,4 @@ Below, you'll find some information about the project, how to set it up locally,
 - Dynamic Content: Sections like projects, skills, and experience are dynamically populated from the data files.
 - Portfolio Showcase: A dedicated section to showcase my projects and achievements.
 
-#Thank you for visiting my Resume Website project. Happy coding! 😊
+# Thank you for visiting my Resume Website project. Happy coding! 😊
