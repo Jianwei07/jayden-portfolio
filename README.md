@@ -23,4 +23,4 @@ Below, you'll find some information about the project, how to set it up locally,
 - Dynamic Content: Sections like projects, skills, and experience are dynamically populated from the data files.
 - Portfolio Showcase: A dedicated section to showcase my projects and achievements.
 
-# Thank you for visiting my Resume Website project. Happy coding! 😊
+### Thank you for visiting my Resume Website project. Happy coding! 😊
