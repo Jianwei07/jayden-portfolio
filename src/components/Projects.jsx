@@ -20,6 +20,9 @@ import GithubIcon from "../assets/github.svg";
 import OracleIcon from "../assets/oracle.svg";
 import AndriodIcon from "../assets/android.svg";
 import SpringbootIcon from "../assets/springboot.svg";
+import MongoIcon from "../assets/mongodb.svg";
+import ExpressJS from "../assets/expressjs.svg";
+import TypeScriptIcon from "../assets/typescript.svg";
 
 const stackIcons = {
   ReactJS: ReactIcon,
@@ -40,6 +43,9 @@ const stackIcons = {
   Powershell: PowershellIcon,
   AndriodStudio: AndriodIcon,
   Springboot: SpringbootIcon,
+  Mongo: MongoIcon,
+  Express: ExpressJS,
+  TypeScript: TypeScriptIcon,
 };
 
 function Projects() {
@@ -94,6 +100,7 @@ function Projects() {
         {ProjectData.map((item) => (
           <ProjectItems
             title={item.title}
+            description={item.description}
             imgUrl={item.imgUrl}
             stack={item.stack.map((stackName) => (
               <div className="relative group">
