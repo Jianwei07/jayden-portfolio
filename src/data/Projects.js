@@ -35,6 +35,13 @@ export default [
     link: "https://github.com/Jianwei07/jayden-portfolio-m/tree/main",
   },
   {
+    title: "Expenses Tracker Mobile Application",
+    description: "",
+    imgUrl: ExpenseTrackerImage,
+    stack: ["Flutter", "Dart", "AndriodStudio"],
+    link: "https://drive.google.com/file/d/1vEnGLUHt-2Scu44vkOwjehgC7VU30Kb3/view?usp=drive_link",
+  },
+  {
     title: "OpenAI API Personalized Chatbot",
     description: "",
     imgUrl: MernAI,
@@ -48,12 +55,5 @@ export default [
       "JavaScript",
     ],
     link: "https://github.com/Jianwei07/MERN-AI-Comp",
-  },
-  {
-    title: "Expenses Tracker Mobile Application",
-    description: "",
-    imgUrl: ExpenseTrackerImage,
-    stack: ["Flutter", "Dart", "AndriodStudio"],
-    link: "https://drive.google.com/file/d/1vEnGLUHt-2Scu44vkOwjehgC7VU30Kb3/view?usp=drive_link",
   },
 ];
