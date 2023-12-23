@@ -31,7 +31,9 @@ import Salesfunnel from "../assets/salesfunnel.svg";
 import GoogleAds from "../assets/googleads.svg";
 import GoogleAnalytics from "../assets/google-analytics.svg";
 import GoogleMarket from "../assets/googlemarket.svg";
-
+import Docker from "../assets/docker.svg";
+import Kubernetes from "../assets/k88.svg";
+import AmazonWebServices from "../assets/amzweb.svg";
 import Miro from "../assets/miro.svg";
 import Figma from "../assets/figma.svg";
 import Asana from "../assets/asana.svg";
@@ -52,11 +54,40 @@ function About() {
         </h2>
       </div>
       <AboutSection
-        title="Full Stack Development"
+        title="Full-Stack Software Development"
         description={[
-          "Experienced in building responsive websites using ReactJS with UI components like MUI and TailwindCSS.",
-          "Learning and developing mobile applications using Flutter and Dart using inhouse UI components.",
-          "Experienced in creating robust application backends using technologies like Node.js, Firebase, and MongoDB.",
+          <a>
+            <strong>MERN Stack Proficiency:</strong> Proficient in the MERN
+            stack (MongoDB, ExpressJS, ReactJS, NodeJS), I've developed
+            sophisticated web applications. Recent projects include a personal
+            chatbot leveraging ChatGPT API and a dynamic To-Do-List application
+            interfacing with MongoDB for ticket management.
+          </a>,
+          <a>
+            <strong>Innovative Project Development:</strong> Successfully
+            implemented two significant projects: a fully-functional Bank
+            Terminal using Java and Spring Boot, and InnovPay - a ReactJS and
+            MUI based banking product offering currency exchange services akin
+            to Wise, showcasing both backend proficiency and frontend finesse.
+          </a>,
+          <a>
+            <strong>Responsive Web Design:</strong> Skilled in creating
+            responsive and user-friendly websites using ReactJS, integrated with
+            UI frameworks like MUI and TailwindCSS, ensuring a seamless user
+            experience across various devices.
+          </a>,
+          <a>
+            <a>
+              <strong>Microservices and Containerization:</strong> Currently
+              extending my expertise to deploying applications as microservices
+              using Docker, enhancing scalability and efficiency in application
+              delivery.
+            </a>
+            ,<strong>Robust Backend Experience:</strong> Experienced in
+            integrating backend applications with technologies like Node.js,
+            Oracle DB, and MongoDB, enabling the creation of robust, scalable,
+            and secure web applications.
+          </a>,
         ]}
         stackIcons={[
           { src: HtmlIcon, alt: "HTML", title: "HTML" },
@@ -75,6 +106,48 @@ function About() {
         imageSrc={FullStackImage}
         altText="Full Stack Development Image"
       />
+
+      <AboutSection
+        title="DevOps, Architecture, and Cloud Infrastructure"
+        description={[
+          <a>
+            <strong>Certified and Experienced:</strong> Holding certifications
+            in DevOps, DevSecOps, AWS Cloud Practitioner, and Oracle Cloud
+            Infrastructure Foundations Associate, I bring a well-rounded
+            expertise in both theory and practice of DevOps and cloud
+            architecture."
+          </a>,
+          <a>
+            <strong>Kubernetes and Containerization Skills:</strong> Completed
+            an intensive Kubernetes bootcamp, good knowledge at deploying
+            applications using Docker, and currently exploring more advanced
+            Kubernetes features for scalable application deployment.
+          </a>,
+          <a>
+            <strong>Technical Proficiency:</strong> Advanced knowledge in
+            networking, YAML/JSON/XML, and command-line skills, which enhance my
+            configuration management and cloud navigation capabilities.
+          </a>,
+          <a>
+            <strong>Agile and Lean DevOps Approach:</strong> A strong advocant
+            of agile methodologies and Lean DevOps practices, focusing on
+            identifying purpose, objective and utiltizing feedback loops to
+            continuous improvement, and streamlined software delivery.
+          </a>,
+        ]}
+        stackIcons={[
+          { src: Docker, alt: "Docker" },
+          { src: Kubernetes, alt: "Kubernetes" },
+          { src: AWSIcon, alt: "AWS" },
+          { src: AmazonWebServices, alt: "AmazonWebServices" },
+          { src: MongoDBIcon, alt: "MongoDB" },
+          { src: Oracle, alt: "Oracle" },
+          { src: GoogleCloud, alt: "Google Cloud" },
+          { src: FireBaseIcon, alt: "Firebase" },
+        ]}
+        imageSrc={CloudInfra}
+        altText="Cloud Intrastructure Image"
+      />
       <AboutSection
         title="Data Science, AI and Machine Learning"
         description={[
@@ -92,41 +165,8 @@ function About() {
           { src: Chatbot, alt: "Chatbot" },
         ]}
         imageSrc={DataScience}
-        altText="Cloud Intrastructure Image"
+        altText="Data Science and Machine Learning"
       />
-      <AboutSection
-        title="Cloud Infrastructure and DevOps"
-        description={[
-          "Hands-on experience with cloud platforms, including AWS and Oracle Cloud Infrastructure.",
-          "Experience in deploying websites on virtual machines and seamlessly integrating them with databases.",
-          "Hold certifications in AWS Cloud Practitioner, Oracle Cloud Infrastructure Foundations Associate, DevOps, and DevSecOps Associate.",
-        ]}
-        stackIcons={[
-          { src: AWSIcon, alt: "AWS" },
-          { src: Oracle, alt: "Oracle" },
-          { src: GoogleCloud, alt: "Google Cloud" },
-          { src: FireBaseIcon, alt: "Firebase" },
-          { src: MongoDBIcon, alt: "MongoDB" },
-        ]}
-        imageSrc={CloudInfra}
-        altText="Cloud Intrastructure Image"
-      />
-      <AboutSection
-        title="UI/UX Design"
-        description={[
-          "Experienced in designing intuitive user interfaces for both mobile and web applications.",
-          "Proficient in using collaborative design tools such as Figma, Mira, and Asana.",
-          "Collaborative team player with a strong track record of working closely with developers, creating application flows, and designing wireframes.",
-        ]}
-        stackIcons={[
-          { src: Figma, alt: "Figma" },
-          { src: Miro, alt: "Miro" },
-          { src: Asana, alt: "Asana" },
-        ]}
-        imageSrc={uiux}
-        altText="UI/UX Image"
-      />
-
       <AboutSection
         title="Digital Marketing Professional"
         description={[
@@ -157,6 +197,21 @@ function About() {
         ]}
         imageSrc={Salesfunnel}
         altText="Digital Marketing"
+      />
+      <AboutSection
+        title="UI/UX Design"
+        description={[
+          "Experienced in designing intuitive user interfaces for both mobile and web applications.",
+          "Proficient in using collaborative design tools such as Figma, Mira, and Asana.",
+          "Collaborative team player with a strong track record of working closely with developers, creating application flows, and designing wireframes.",
+        ]}
+        stackIcons={[
+          { src: Figma, alt: "Figma" },
+          { src: Miro, alt: "Miro" },
+          { src: Asana, alt: "Asana" },
+        ]}
+        imageSrc={uiux}
+        altText="UI/UX Image"
       />
     </div>
   );

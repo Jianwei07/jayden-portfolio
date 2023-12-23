@@ -14,13 +14,17 @@ function Hero() {
     <div className="bg-amber-50 flex flex-col md:flex-row justify-center items-center h-screen p-4 md:px-8 lg:px-16">
       <div className="content md:text-left max-w-3xl lg:mr-16">
         <h1 className="text-black text-3xl md:text-4xl lg:text-5xl font-bold font-public-sans mb-4">
-          Front-End React and Flutter Mobile App Developer
+          Aspiring Full-Stack Developer & Tech Enthusiast
         </h1>
         <p className="text-gray-500 text-sm md:text-base lg:text-base max-w-2xl mb-6 font-public-sans">
-          👋 Hey there! I'm Jayden Liaw, a Singapore-based software enthusiast
-          on an exhilarating tech journey. Curiosity fuels me, and I thrive on
-          teamwork. Currently exploring ReactJS and Flutter Mobile App to craft
-          tools that redefine efficiency.
+          👋 Hi there! I'm Jayden Liaw, a Singapore-based Full-Stack Software
+          Engineer. Currently, I'm immersed in unraveling the complexities of
+          Software Architectures, containerization, and networking. Seeking to
+          understand not just the how, but the why behind technology. Podcasts
+          are my window to the broader implications of tech - reminding me that
+          beyond the code, it's about the impactful ideas and the social aspects
+          of engineering. Let's explore and make sense of this ever-evolving
+          tech landscape together!
         </p>
         <div className="flex gap-2 cursor-pointer mb-8">
           <img
