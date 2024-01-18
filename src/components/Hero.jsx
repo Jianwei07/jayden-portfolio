@@ -17,14 +17,15 @@ function Hero() {
           Aspiring Full-Stack Developer & Tech Enthusiast
         </h1>
         <p className="text-gray-500 text-sm md:text-base lg:text-base max-w-2xl mb-6 font-public-sans">
-          👋 Hi there! I'm Jayden Liaw, a Singapore-based Full-Stack Software
-          Engineer. Currently, I'm immersed in unraveling the complexities of
-          Software Architectures, containerization, and networking. Seeking to
-          understand not just the how, but the why behind technology. Podcasts
-          are my window to the broader implications of tech - reminding me that
-          beyond the code, it's about the impactful ideas and the social aspects
-          of engineering. Let's explore and make sense of this ever-evolving
-          tech landscape together!
+          Hi there 👋 ! I'm Jayden, Jian Wei, a Singapore-based Full-Stack
+          Software Engineer. Currently, I'm immersed in unraveling the
+          complexities of Software Architectures, containerization, and
+          networking. <p></p>
+          Seeking to understand not just the how, but the why behind technology.
+          Podcasts are my window to the broader implications of tech - reminding
+          me that beyond the code, it's about the impactful ideas and the social
+          aspects of engineering. Let's explore and make sense of this
+          ever-evolving tech landscape together!
         </p>
         <div className="flex gap-2 cursor-pointer mb-8">
           <img

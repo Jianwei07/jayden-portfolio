@@ -4,6 +4,7 @@ import PersonalWebsiteImage from "../assets/PersonalWebsite.png";
 import ExpenseTrackerImage from "../assets/ExpenseTracker.png";
 import Springleaf from "../assets/harbourbank.png";
 import MernAI from "../assets/aichatbot.png";
+import MernExpense from "../assets/ExpenseTrackerMern.png";
 
 export default [
   {
@@ -43,7 +44,7 @@ export default [
   },
   {
     title: "OpenAI API Personalized Chatbot",
-    description: "",
+    description: "In Progress",
     imgUrl: MernAI,
     stack: [
       "Mongo",
@@ -55,5 +56,20 @@ export default [
       "JavaScript",
     ],
     link: "https://github.com/Jianwei07/MERN-AI-Comp",
+  },
+  {
+    title: "Expense Claim Tracker",
+    description: "In Progress",
+    imgUrl: MernExpense,
+    stack: [
+      "Mongo",
+      "Express",
+      "ReactJS",
+      "NodeJS",
+      "Vite",
+      "StyledComponent",
+      "JavaScript",
+    ],
+    link: "",
   },
 ];

@@ -23,6 +23,7 @@ import SpringbootIcon from "../assets/springboot.svg";
 import MongoIcon from "../assets/mongodb.svg";
 import ExpressJS from "../assets/expressjs.svg";
 import TypeScriptIcon from "../assets/typescript.svg";
+import StyledComponentIcon from "../assets/styled-components.svg";
 
 const stackIcons = {
   ReactJS: ReactIcon,
@@ -46,6 +47,7 @@ const stackIcons = {
   Mongo: MongoIcon,
   Express: ExpressJS,
   TypeScript: TypeScriptIcon,
+  StyledComponent: StyledComponentIcon,
 };
 
 function Projects() {

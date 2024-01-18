@@ -10,7 +10,7 @@ function Contact() {
         <h2
           style={{
             color: "#147EFB",
-            fontSize: "2rem",
+            fontSize: "3rem",
             margin: "0",
             fontWeight: "bold",
           }}
@@ -18,7 +18,7 @@ function Contact() {
           Contact Me
         </h2>
       </div>
-      <p className="text-gray-700 py-2 text-[21px] md:text-base lg:text-base mt-4">
+      <p className="text-gray-700 py-2 text-[21px] md:text-base lg:text-lg mt-4">
         Thank you for your time! I'm open to a variety of opportunities and
         collaborations within the tech industry. Here's how you can get in touch
         with me:
@@ -30,7 +30,7 @@ function Contact() {
           rel="noopener noreferrer"
           title="Email"
         >
-          <EmailIcon style={{ fontSize: "2rem", color: "#2D2E32" }} />
+          <EmailIcon style={{ fontSize: "3rem", color: "#2D2E32" }} />
         </a>
         <a
           href="https://www.linkedin.com/in/liawjianwei/"
@@ -38,7 +38,7 @@ function Contact() {
           rel="noopener noreferrer"
           title="LinkedIn"
         >
-          <LinkedInIcon style={{ fontSize: "2rem", color: "#2D2E32" }} />
+          <LinkedInIcon style={{ fontSize: "3rem", color: "#2D2E32" }} />
         </a>
         <a
           href="https://github.com/Jianwei07"
@@ -46,10 +46,10 @@ function Contact() {
           rel="noopener noreferrer"
           title="GitHub"
         >
-          <GitHubIcon style={{ fontSize: "2rem", color: "#2D2E32" }} />
+          <GitHubIcon style={{ fontSize: "3rem", color: "#2D2E32" }} />
         </a>
       </div>
-      <div className="text-gray-700 py-2 text-[18px] md:text-base lg:text-base mt-4">
+      <div className="text-gray-700 py-2 text-[18px] md:text-base lg:text-lg mt-4">
         I'm excited about the following opportunities:
         <ul className="list-disc list-inside text-center text-gray-700 mt-2 px-2">
           <li>Project Collaborations</li>
