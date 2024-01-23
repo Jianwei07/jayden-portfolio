@@ -1,4 +1,3 @@
-import React from "react";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -19,8 +18,8 @@ function Contact() {
         </h2>
       </div>
       <p className="text-gray-700 py-2 text-[21px] md:text-base lg:text-lg mt-4">
-        Thank you for your time! I'm open to a variety of opportunities and
-        collaborations within the tech industry. Here's how you can get in touch
+        Thank you for your time! I`m open to a variety of opportunities and
+        collaborations within the tech industry. Here`s how you can get in touch
         with me:
       </p>
       <div className="flex justify-center items-center mt-4 space-x-4">

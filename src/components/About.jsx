@@ -1,4 +1,3 @@
-import React from "react";
 import AboutSection from "./AboutSection";
 import FullStackImage from "../assets/fullstack.svg";
 import CloudInfra from "../assets/cloudinfra.svg";
@@ -41,7 +40,7 @@ import Asana from "../assets/asana.svg";
 function About() {
   return (
     <div className="bg-amber-50 px-4 md:px-8 lg:px-16">
-      <div className="flex justify-center items-center">
+      <div className="w-full text-center py-4 flex justify-center items-center">
         <h2
           style={{
             color: "#147EFB",
@@ -56,34 +55,34 @@ function About() {
       <AboutSection
         title="Full-Stack Software Development"
         description={[
-          <a>
+          <a key="1">
             <strong>MERN Stack Proficiency:</strong> Proficient in the MERN
-            stack (MongoDB, ExpressJS, ReactJS, NodeJS), I've developed
+            stack (MongoDB, ExpressJS, ReactJS, NodeJS), I`ve developed
             sophisticated web applications. Recent projects include a personal
             chatbot leveraging ChatGPT API and a dynamic To-Do-List application
             interfacing with MongoDB for ticket management.
           </a>,
-          <a>
+          <a key="2">
             <strong>Innovative Project Development:</strong> Successfully
             implemented two significant projects: a fully-functional Bank
             Terminal using Java and Spring Boot, and InnovPay - a ReactJS and
             MUI based banking product offering currency exchange services akin
             to Wise, showcasing both backend proficiency and frontend finesse.
           </a>,
-          <a>
+          <a key="3">
             <strong>Responsive Web Design:</strong> Skilled in creating
             responsive and user-friendly websites using ReactJS, integrated with
             UI frameworks like MUI and TailwindCSS, ensuring a seamless user
             experience across various devices.
           </a>,
-          <a>
-            <a>
-              <strong>Microservices and Containerization:</strong> Currently
-              extending my expertise to deploying applications as microservices
-              using Docker, enhancing scalability and efficiency in application
-              delivery.
-            </a>
-            ,<strong>Robust Backend Experience:</strong> Experienced in
+          <a key="4">
+            <strong>Microservices and Containerization:</strong> Currently
+            extending my expertise to deploying applications as microservices
+            using Docker, enhancing scalability and efficiency in application
+            delivery.
+          </a>,
+          <a key="5">
+            <strong>Robust Backend Experience:</strong> Experienced in
             integrating backend applications with technologies like Node.js,
             Oracle DB, and MongoDB, enabling the creation of robust, scalable,
             and secure web applications.
@@ -110,25 +109,25 @@ function About() {
       <AboutSection
         title="DevOps, Architecture, and Cloud Infrastructure"
         description={[
-          <a>
+          <a key="6">
             <strong>Certified and Experienced:</strong> Holding certifications
             in DevOps, DevSecOps, AWS Cloud Practitioner, and Oracle Cloud
             Infrastructure Foundations Associate, I bring a well-rounded
             expertise in both theory and practice of DevOps and cloud
-            architecture."
+            architecture.
           </a>,
-          <a>
+          <a key="7">
             <strong>Kubernetes and Containerization Skills:</strong> Completed
             an intensive Kubernetes bootcamp, good knowledge at deploying
             applications using Docker, and currently exploring more advanced
             Kubernetes features for scalable application deployment.
           </a>,
-          <a>
+          <a key="8">
             <strong>Technical Proficiency:</strong> Advanced knowledge in
             networking, YAML/JSON/XML, and command-line skills, which enhance my
             configuration management and cloud navigation capabilities.
           </a>,
-          <a>
+          <a key="9">
             <strong>Agile and Lean DevOps Approach:</strong> A strong advocant
             of agile methodologies and Lean DevOps practices, focusing on
             identifying purpose, objective and utiltizing feedback loops to
@@ -151,10 +150,29 @@ function About() {
       <AboutSection
         title="Data Science, AI and Machine Learning"
         description={[
-          "Proficient in using Jupyter Notebook for data cleaning and skilled in uncovering trends and generating insights from CSV data using Matplotlib, Seaborn, Plotly, and NumPy.",
-          "Experienced in applying machine learning algorithms, including Linear Regression, Polynomial Regression, Decision Trees, and Random Forest. I have utilized these models to predict civil engineering risk.",
-          "Geotechnical Engineering and Numerical Modeling: Applied Python to generate essential soil parameters within Plaxis 2D to analysis soil deformation.",
-          "Self-explored the field of Natural Language Processing (NLP) and tinkered around chatbots using technologies like ChatterBot, TkinterBot, and spaCy.",
+          <a key="10">
+            <strong>Engineering Risk and Probability:</strong> Experienced in
+            applying machine learning algorithms, including Linear Regression,
+            Polynomial Regression, Decision Trees, and Random Forest. I have
+            utilized these models to predict civil engineering risk.
+          </a>,
+          <a key="11">
+            Proficient in using Jupyter Notebook for data cleaning and skilled
+            in uncovering trends and generating insights from CSV data using
+            Matplotlib, Seaborn, Plotly, and NumPy.
+          </a>,
+          <a key="12">
+            <strong>
+              Geospartial, Geotechnical Engineering and Numerical Modeling:
+            </strong>{" "}
+            Applied Python to generate essential soil parameters within Plaxis
+            2D to analysis soil deformation.
+          </a>,
+          <a key="13">
+            Self-explored the field of Natural Language Processing (NLP) and
+            tinkered around chatbots using technologies like ChatterBot,
+            TkinterBot, and spaCy.
+          </a>,
         ]}
         stackIcons={[
           { src: Python, alt: "Python" },
@@ -171,6 +189,7 @@ function About() {
         title="Digital Marketing Professional"
         description={[
           <a
+            key="14"
             href="https://drive.google.com/drive/folders/1-2AVBsKy8SG75QEmtcFjBkcvcWxfvjFW?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"

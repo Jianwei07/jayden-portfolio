@@ -1,4 +1,3 @@
-import React from "react";
 import GitLogo from "../assets/github.svg";
 import Linkedin from "../assets/linkedin.svg";
 import ReactIcon from "../assets/react.svg";
@@ -11,20 +10,21 @@ import DisplayPicture from "../assets/jayden_dp.png";
 
 function Hero() {
   return (
-    <div className="bg-amber-50 flex flex-col md:flex-row justify-center items-center h-screen p-4 md:px-8 lg:px-16">
-      <div className="content md:text-left max-w-3xl lg:mr-16">
+    <div className="bg-amber-50 flex flex-col md:flex-row justify-center items-center md:h-screen md:py-8 lg:py-16 xl:py-24">
+      <div className=" md:text-left max-w-5xl p-2">
         <h1 className="text-black text-3xl md:text-4xl lg:text-5xl font-bold font-public-sans mb-4">
-          Aspiring Full-Stack Developer & Tech Enthusiast
+          Aspiring DevOps Engineer & Tech Enthusiast
         </h1>
-        <p className="text-gray-500 text-sm md:text-base lg:text-base max-w-2xl mb-6 font-public-sans">
-          Hi there 👋 ! I'm Jayden, Jian Wei, a Singapore-based Full-Stack
-          Software Engineer. Currently, I'm immersed in unraveling the
+        <p className="text-gray-700 mr-10 text-sm md:text-md lg:text-lg mb-6 font-public-sans">
+          Hi there 👋 ! I`m Jayden, Jian Wei, a Singapore-based Full-Stack
+          Software Engineer. Currently, I`m immersed in unraveling the
           complexities of Software Architectures, containerization, and
-          networking. <p></p>
+          networking to improve software reliability.
+          <br />
           Seeking to understand not just the how, but the why behind technology.
           Podcasts are my window to the broader implications of tech - reminding
-          me that beyond the code, it's about the impactful ideas and the social
-          aspects of engineering. Let's explore and make sense of this
+          me that beyond the code, it`s about the impactful ideas and the social
+          aspects of engineering. Let`s explore and make sense of this
           ever-evolving tech landscape together!
         </p>
         <div className="flex gap-2 cursor-pointer mb-8">
@@ -47,7 +47,7 @@ function Hero() {
         </div>
         {/* Tech Stack */}
         <div className="flex flex-col md:flex-row items-center mt-4 md:mt-8">
-          <h3 className="text-lg font-semibold text-gray-800 md:mr-2 md:mb-0">
+          <h3 className="text-lg font-semibold text-gray-800 md:mr-2 md:mb-2">
             Tech Stacks :
           </h3>
           <div className="flex gap-2">
@@ -99,7 +99,7 @@ function Hero() {
         </div>
       </div>
       {/* Display Picture */}
-      <div className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 flex-shrink-0 rounded-full border-4 border-amber shadow-lg overflow-hidden sm:order-first md:order-last lg:order-last">
+      <div className="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 mx-8 flex-shrink-0 rounded-full border-4 border-amber shadow-lg overflow-hidden sm:order-first md:order-last lg:order-last">
         <img
           src={DisplayPicture}
           alt="Display Picture"
