@@ -11,13 +11,13 @@ import DisplayPicture from "../assets/jayden_dp.png";
 function Hero() {
   return (
     <div className="bg-amber-50 flex flex-col md:flex-row justify-center items-center md:h-screen md:py-8 lg:py-16 xl:py-24">
-      <div className=" md:text-left max-w-5xl p-2">
-        <h1 className="text-black text-3xl md:text-4xl lg:text-5xl font-bold font-public-sans mb-4">
+      <div className="text-left max-w-4xl mx-auto px-4 md:px-5">
+        <h1 className="text-black text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold font-public-sans mb-4">
           Aspiring DevOps Engineer & Tech Enthusiast
         </h1>
-        <p className="text-gray-700 mr-10 text-sm md:text-md lg:text-lg mb-6 font-public-sans">
-          Hi there 👋 ! I`m Jayden, Jian Wei, a Singapore-based Full-Stack
-          Software Engineer. Currently, I`m immersed in unraveling the
+        <p className="text-gray-700 text-xs md:text-sm lg:text-base mb-6 font-public-sans">
+          Hi there 👋! I'm Jayden, Jian Wei, a Singapore-based Full-Stack
+          Software Engineer. Currently, I'm immersed in unraveling the
           complexities of Software Architectures, containerization, and
           networking to improve software reliability.
           <br />

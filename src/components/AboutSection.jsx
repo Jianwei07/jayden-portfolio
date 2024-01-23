@@ -7,8 +7,8 @@ function AboutSection({ title, description, stackIcons, imageSrc, altText }) {
         <img src={imageSrc} alt={altText} className="w-full h-auto lg:h-200" />
       </div>
       <div className="lg:w-3/5 mt-4 lg:mt-0 lg:ml-4 mx-auto">
-        <div className="w-full mx-10 py-2">
-          <h2 className="text-[40px] text-center md:text-left lg:text-left font-bold mb-2">
+        <div className="w-full p-4">
+          <h2 className="text-[40px] text-center sm:text-left md:text-left lg:text-left font-bold mb-2">
             {title}
           </h2>
           <div className="flex items-center flex-wrap gap-6 mt-2 mb-2">

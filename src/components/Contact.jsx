@@ -9,7 +9,7 @@ function Contact() {
         <h2
           style={{
             color: "#147EFB",
-            fontSize: "3rem",
+            fontSize: "4rem",
             margin: "0",
             fontWeight: "bold",
           }}
@@ -17,7 +17,7 @@ function Contact() {
           Contact Me
         </h2>
       </div>
-      <p className="text-gray-700 py-2 text-[21px] md:text-base lg:text-lg mt-4">
+      <p className="text-gray-700 text-center py-2 text-[21px] md:text-base lg:text-lg mt-4">
         Thank you for your time! I`m open to a variety of opportunities and
         collaborations within the tech industry. Here`s how you can get in touch
         with me:
@@ -48,7 +48,7 @@ function Contact() {
           <GitHubIcon style={{ fontSize: "3rem", color: "#2D2E32" }} />
         </a>
       </div>
-      <div className="text-gray-700 py-2 text-[18px] md:text-base lg:text-lg mt-4">
+      <div className="text-gray-700 py-2 text-[21px] md:text-base lg:text-lg mt-4">
         I'm excited about the following opportunities:
         <ul className="list-disc list-inside text-center text-gray-700 mt-2 px-2">
           <li>Project Collaborations</li>
