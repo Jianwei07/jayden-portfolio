@@ -4,20 +4,13 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 function Contact() {
   return (
-    <div className="bg-amber-100 flex flex-col items-center justify-center h-[85vh] p-8 py-20">
-      <div className="flex justify-center items-center">
-        <h2
-          style={{
-            color: "#147EFB",
-            fontSize: "4rem",
-            margin: "0",
-            fontWeight: "bold",
-          }}
-        >
+    <div className="bg-amber-100 flex flex-col items-center justify-center p-8 md:p-16">
+      <div className="w-full flex justify-center items-center py-4">
+        <h2 className="text-blue-500 text-3xl md:text-4xl lg:text-5xl font-bold m-0">
           Contact Me
         </h2>
       </div>
-      <p className="text-gray-700 text-center py-2 text-[21px] md:text-base lg:text-lg mt-4">
+      <p className="text-gray-700 text-center text-xs md:text-sm lg:text-base font-public-sans">
         Thank you for your time! I`m open to a variety of opportunities and
         collaborations within the tech industry. Here`s how you can get in touch
         with me:
@@ -28,27 +21,31 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
           title="Email"
+          className="text-3xl text-gray-800 hover:text-gray-600 transition duration-300"
         >
-          <EmailIcon style={{ fontSize: "3rem", color: "#2D2E32" }} />
+          <EmailIcon />
         </a>
         <a
           href="https://www.linkedin.com/in/liawjianwei/"
           target="_blank"
           rel="noopener noreferrer"
           title="LinkedIn"
+          className="text-3xl text-gray-800 hover:text-gray-600 transition duration-300"
         >
-          <LinkedInIcon style={{ fontSize: "3rem", color: "#2D2E32" }} />
+          <LinkedInIcon />
         </a>
         <a
           href="https://github.com/Jianwei07"
           target="_blank"
           rel="noopener noreferrer"
           title="GitHub"
+          className="text-3xl text-gray-800 hover:text-gray-600 transition duration-300"
         >
-          <GitHubIcon style={{ fontSize: "3rem", color: "#2D2E32" }} />
+          <GitHubIcon />
         </a>
       </div>
-      <div className="text-gray-700 py-2 text-[21px] md:text-base lg:text-lg mt-4">
+
+      <div className="text-gray-700 text-left text-xs md:text-sm lg:text-base mb-6 font-public-sans">
         I'm excited about the following opportunities:
         <ul className="list-disc list-inside text-center text-gray-700 mt-2 px-2">
           <li>Project Collaborations</li>

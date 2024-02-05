@@ -14,57 +14,45 @@ function Footer() {
   };
 
   return (
-    <footer
-      style={{
-        backgroundColor: "#2D2E32",
-        color: "white",
-        textAlign: "center",
-        padding: "20px 80px",
-        fontSize: "0.9rem",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
-      <div>
-        <span style={{ marginRight: "10px" }}>
-          Copyright &copy; {currentYear}. All Rights Reserved.
-        </span>
-        <span className="flex flex-row items-center">
-          images by{" "}
-          <img
-            src={freepik}
-            alt="Freepik"
-            style={{
-              width: "50px",
-              height: "50px",
-              verticalAlign: "middle",
-              marginLeft: "5px",
-            }}
-          />
-        </span>
+    <footer className="bg-[#2D2E32] text-white text-center p-5 md:p-8 text-sm flex flex-col md:flex-row justify-between items-center">
+      <div className="mb-4 md:mb-0 flex flex-col md:flex-row items-center text-center md:text-left">
+        <div className="mb-4 md:mb-0">
+          <span className="mr-2">
+            Copyright &copy; {currentYear}. All Rights Reserved.
+          </span>
+        </div>
+        <div className="flex justify-center md:justify-start items-center">
+          <span className="flex flex-row items-center">
+            images by{" "}
+            <img
+              src={freepik}
+              alt="Freepik"
+              className="ml-2 w-12 h-12 align-middle"
+            />
+          </span>
+        </div>
       </div>
-      <div>
+      <div className="flex justify-center items-center">
         <a
           href="https://www.linkedin.com/in/liawjianwei/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ marginRight: "1rem", color: "white" }}
+          className="mr-4 text-white"
         >
-          <LinkedInIcon style={{ fontSize: "2rem" }} />
+          <LinkedInIcon className="text-4xl" />
         </a>
         <a
           href="https://github.com/Jianwei07"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ marginRight: "1rem", color: "white" }}
+          className="mr-4 text-white"
         >
-          <GitHubIcon style={{ fontSize: "2rem" }} />
+          <GitHubIcon className="text-4xl" />
         </a>
         <IconButton
           color="inherit"
           onClick={scrollToTop}
-          style={{ color: "white", boxShadow: "0px 4px 6px rgba(0,0,0,0.3)" }}
+          className="text-white shadow-lg"
         >
           <KeyboardArrowUpIcon />
         </IconButton>

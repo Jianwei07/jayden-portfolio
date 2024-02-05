@@ -73,10 +73,10 @@ function Projects() {
           />
           <div className="p-2 order-2 lg:order-2">
             <div className="lg:w">
-              <h2 className="text-[42px] text-center md:text-left lg:text-left font-bold mb-2">
+              <h2 className="text-black text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold font-public-sans mb-4">
                 Exploring Tech Horizons: My Development Endeavors
               </h2>
-              <p className="text-gray-700 py-2 text-[20px] md:text-left lg:text-left font-public-sans">
+              <p className="text-gray-700 text-left text-xs md:text-sm lg:text-base mb-6 font-public-sans">
                 In my limited but promising journey, I`ve contributed to
                 open-source projects. As a believer in growth through
                 collaboration, each project is an invitation to learn and share.

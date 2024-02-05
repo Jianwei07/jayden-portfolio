@@ -10,6 +10,7 @@ export default {
       extend: {
         colors: {
           black: "#000000",
+          wow: "#2D2E32",
           grey: "#808080",
           dark_primary: "#06223F",
           bg_light_primary: "#F5F9FD",
