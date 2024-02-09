@@ -13,13 +13,15 @@ function Hero() {
     <div className="bg-amber-50 flex flex-col md:flex-row justify-center items-center md:h-screen md:py-8 lg:py-16 xl:py-24">
       <div className="text-left max-w-4xl mx-auto px-4 md:px-5">
         <h1 className="text-black text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold font-public-sans mb-4">
-          Aspiring DevOps Engineer & Tech Enthusiast
+          Aspiring Software Engineer & Tech Enthusiast
         </h1>
         <p className="text-gray-700 text-xs md:text-sm lg:text-base mb-6 font-public-sans">
-          Hi there 👋! I'm Jayden, Jian Wei, a Singapore-based Full-Stack
-          Software Engineer. Currently, I'm immersed in unraveling the
-          complexities of Software Architectures, containerization, and
-          networking to improve software reliability.
+          Hello there 👋! I'm Jayden, Jian Wei, based in Singapore and
+          navigating the tech space as a Full-Stack Software Engineer with a
+          keen eye on roles spanning Product Management, System Analysis, and
+          Software Engineering. My journey is marked by a deep dive into the
+          realms of Software Architecture, DevOps practices, and networking
+          essentials to bolster software excellence.
           <br />
           Seeking to understand not just the how, but the why behind technology.
           Podcasts are my window to the broader implications of tech - reminding
@@ -99,7 +101,7 @@ function Hero() {
         </div>
       </div>
       {/* Display Picture */}
-      <div className="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 mx-8 flex-shrink-0 rounded-full border-4 border-amber shadow-lg overflow-hidden sm:order-first md:order-last lg:order-last">
+      <div className="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 mx-auto flex-shrink-0 rounded-full border-4 border-amber shadow-lg overflow-hidden sm:order-first md:order-last lg:order-last">
         <img
           src={DisplayPicture}
           alt="Display Picture"
