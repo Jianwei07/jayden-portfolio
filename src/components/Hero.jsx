@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import GitLogo from "../assets/github.svg";
 import Linkedin from "../assets/linkedin.svg";
 import ReactIcon from "../assets/react.svg";
