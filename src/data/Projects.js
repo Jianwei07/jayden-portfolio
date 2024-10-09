@@ -43,6 +43,13 @@ export default [
     link: "https://drive.google.com/file/d/1vEnGLUHt-2Scu44vkOwjehgC7VU30Kb3/view?usp=drive_link",
   },
   {
+    title: "Sanity.io test application",
+    description: "",
+    imgUrl: "",
+    stack: ["ReactJS", "Vite", "TailwindCSS", "TypeScript"],
+    link: "https://nextjs-test-1-wheat.vercel.app/",
+  },
+  {
     title: "OpenAI API Personalized Chatbot",
     description: "In Progress",
     imgUrl: MernAI,
