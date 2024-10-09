@@ -21,10 +21,15 @@ import SpringbootIcon from "../assets/springboot.svg";
 import MongoIcon from "../assets/mongodb.svg";
 import ExpressJS from "../assets/expressjs.svg";
 import TypeScriptIcon from "../assets/typescript.svg";
+import Flask from "../assets/flask.svg";
+import NextJS from "../assets/next-js.svg";
+import Vercel from "../assets/vercel.svg";
+import AWS from "../assets/aws.svg";
 import StyledComponentIcon from "../assets/styled-components.svg";
 import ProjectItems from "./Project-items";
 
 const stackIcons = {
+  AWS: AWS,
   ReactJS: ReactIcon,
   "Material UI": MaterialUIIcon,
   NodeJS: NodeJSIcon,
@@ -45,6 +50,9 @@ const stackIcons = {
   Springboot: SpringbootIcon,
   Mongo: MongoIcon,
   Express: ExpressJS,
+  NextJS: NextJS,
+  Flask: Flask,
+  Vercel: Vercel,
   TypeScript: TypeScriptIcon,
   StyledComponent: StyledComponentIcon,
 };

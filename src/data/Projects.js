@@ -3,7 +3,7 @@ import JavaTellerImage from "../assets/javaTeller.png";
 import PersonalWebsiteImage from "../assets/PersonalWebsite.png";
 import ExpenseTrackerImage from "../assets/ExpenseTracker.png";
 import Springleaf from "../assets/harbourbank.png";
-import MernAI from "../assets/aichatbot.png";
+import CodeReview from "../assets/CodeReviewer.jpg";
 import MernExpense from "../assets/ExpenseTrackerMern.png";
 
 export default [
@@ -43,26 +43,19 @@ export default [
     link: "https://drive.google.com/file/d/1vEnGLUHt-2Scu44vkOwjehgC7VU30Kb3/view?usp=drive_link",
   },
   {
-    title: "Sanity.io test application",
-    description: "",
+    title: "Student Echo",
+    description:
+      "Paid project featuring beautiful UIUX, property listing, feature page and contact page",
     imgUrl: "",
     stack: ["ReactJS", "Vite", "TailwindCSS", "TypeScript"],
-    link: "https://nextjs-test-1-wheat.vercel.app/",
+    link: "https://studentecho.com/",
   },
   {
-    title: "OpenAI API Personalized Chatbot",
-    description: "In Progress",
-    imgUrl: MernAI,
-    stack: [
-      "Mongo",
-      "Express",
-      "ReactJS",
-      "NodeJS",
-      "Vite",
-      "TypeScript",
-      "JavaScript",
-    ],
-    link: "https://github.com/Jianwei07/MERN-AI-Comp",
+    title: "AI Code Reviewer",
+    description: "Pull request code reviewer using Llama 3.1B",
+    imgUrl: CodeReview,
+    stack: ["NextJS", "TailwindCSS", "TypeScript", "Vercel", "Flask"],
+    link: "https://uob-hackathon-dragons.vercel.app/",
   },
   {
     title: "Expense Claim Tracker",
