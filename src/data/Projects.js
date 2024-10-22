@@ -47,7 +47,7 @@ export default [
     description:
       "Paid project featuring beautiful UIUX, property listing, feature page and contact page",
     imgUrl: "",
-    stack: ["ReactJS", "Vite", "TailwindCSS", "TypeScript"],
+    stack: ["NextJS", "TailwindCSS", "TypeScript", "AWS"],
     link: "https://studentecho.com/",
   },
   {
@@ -55,7 +55,7 @@ export default [
     description: "Pull request code reviewer using Llama 3.1B",
     imgUrl: CodeReview,
     stack: ["NextJS", "TailwindCSS", "TypeScript", "Vercel", "Flask"],
-    link: "https://uob-hackathon-dragons.vercel.app/",
+    link: "https://pr-ai-code-reviewer.vercel.app/",
   },
   {
     title: "Expense Claim Tracker",
