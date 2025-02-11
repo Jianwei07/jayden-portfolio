@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { motion } from "framer-motion";
 import GitLogo from "../assets/github.svg";
 import Linkedin from "../assets/linkedin.svg";
 import ReactIcon from "../assets/react.svg";
@@ -9,108 +10,118 @@ import LinuxIcon from "../assets/linux.svg";
 import PythonIcon from "../assets/python.svg";
 import DisplayPicture from "../assets/jayden_dp.png";
 
-function Hero() {
-  return (
-    <div className="bg-amber-50 flex flex-col md:flex-row justify-center items-center md:h-screen md:py-8 lg:py-16 xl:py-24">
-      <div className="text-left max-w-4xl mx-auto px-4 md:px-5">
-        <h1 className="text-black text-3xl md:text-4xl lg:text-5xl xl:text-5xl font-bold font-public-sans mb-4">
-          Aspiring Software Engineer & Tech Enthusiast
-        </h1>
-        <p className="text-gray-700 text-xs md:text-sm lg:text-base mb-6 font-public-sans">
-          Hello there 👋! I'm Jayden, Jian Wei, based in Singapore and
-          navigating the tech space as a Full-Stack Software Engineer with a
-          keen eye on roles spanning Product Management, System Analysis, and
-          Software Engineering. My journey is marked by a deep dive into the
-          realms of Software Architecture, DevOps practices, and networking
-          essentials to bolster software excellence.
-          <br />
-          Seeking to understand not just the how, but the why behind technology.
-          Podcasts are my window to the broader implications of tech - reminding
-          me that beyond the code, it`s about the impactful ideas and the social
-          aspects of engineering. Let`s explore and make sense of this
-          ever-evolving tech landscape together!
-        </p>
-        <div className="flex gap-2 cursor-pointer mb-8">
-          <img
-            src={Linkedin}
-            alt="Linkedin Logo"
-            className="w-8 h-8"
-            onClick={() =>
-              window.open("https://www.linkedin.com/in/liawjianwei/", "_blank")
-            }
-          />
-          <img
-            src={GitLogo}
-            alt="Github Logo"
-            className="w-8 h-8"
-            onClick={() =>
-              window.open("https://github.com/Jianwei07", "_blank")
-            }
-          />
-        </div>
-        {/* Tech Stack */}
-        <div className="flex flex-col md:flex-row items-center mt-4 md:mt-8">
-          <h3 className="text-lg font-semibold text-gray-800 md:mr-2 md:mb-2">
-            Tech Stacks :
-          </h3>
-          <div className="flex gap-2">
-            <div className="w-10 h-10 md:w-14 md:h-14 rounded-full border border-white bg-white shadow-md flex justify-center items-center">
-              <img
-                src={ReactIcon}
-                alt="React"
-                title="React"
-                className="w-7 h-7"
-              />
-            </div>
+const Hero = () => {
+  const socialLinks = [
+    {
+      icon: Linkedin,
+      url: "https://www.linkedin.com/in/liawjianwei/",
+      alt: "LinkedIn Profile",
+    },
+    {
+      icon: GitLogo,
+      url: "https://github.com/Jianwei07",
+      alt: "GitHub Profile",
+    },
+  ];
 
-            <div className="w-10 h-10 md:w-14 md:h-14 rounded-full border border-white bg-white shadow-md flex justify-center items-center mb-4">
+  const techStacks = [
+    { icon: ReactIcon, name: "React" },
+    { icon: JavascriptIcon, name: "JavaScript" },
+    { icon: JavaIcon, name: "Java" },
+    { icon: FlutterIcon, name: "Flutter" },
+    { icon: LinuxIcon, name: "Linux" },
+    { icon: PythonIcon, name: "Python" },
+  ];
+
+  return (
+    <div className="bg-amber-50 min-h-screen px-4 sm:px-6 py-8 lg:py-0">
+      <div className="max-w-6xl mx-auto lg:min-h-screen flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12">
+        {/* Content Section */}
+        <div className="flex-1 space-y-6 sm:space-y-8 text-center lg:text-left">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black font-public-sans leading-tight"
+          >
+            Aspiring Software Engineer & Tech Enthusiast
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-gray-700 text-sm sm:text-base lg:text-lg font-public-sans leading-relaxed"
+          >
+            Hello there 👋! I'm Jayden, Jian Wei, based in Singapore and
+            navigating the tech space as a Full-Stack Software Engineer with a
+            keen eye on roles spanning Product Management, System Analysis, and
+            Software Engineering. My journey is marked by a deep dive into the
+            realms of Software Architecture, DevOps practices, and networking
+            essentials to bolster software excellence.
+          </motion.p>
+
+          {/* Social Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="flex gap-4 justify-center lg:justify-start"
+          >
+            {socialLinks.map((link, index) => (
               <img
-                src={JavascriptIcon}
-                alt="JavaScript"
-                title="JavaScript"
-                className="w-6 h-6"
+                key={index}
+                src={link.icon}
+                alt={link.alt}
+                className="w-7 h-7 cursor-pointer hover:scale-110 transition-transform duration-300"
+                onClick={() => window.open(link.url, "_blank")}
               />
+            ))}
+          </motion.div>
+
+          {/* Tech Stack Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="flex flex-col sm:flex-row items-center gap-4"
+          >
+            <h3 className="text-base font-medium text-gray-800">Tech Stack:</h3>
+            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+              {techStacks.map((tech, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ scale: 1.05 }}
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-white shadow-sm flex items-center justify-center hover:shadow-md transition-shadow duration-300"
+                >
+                  <img
+                    src={tech.icon}
+                    alt={tech.name}
+                    title={tech.name}
+                    className="w-8 h-8 sm:w-9 sm:h-9"
+                  />
+                </motion.div>
+              ))}
             </div>
-            <div className="w-10 h-10 md:w-14 md:h-14 rounded-full border border-white bg-white shadow-md flex justify-center items-center">
-              <img src={JavaIcon} alt="Java" title="Java" className="w-7 h-7" />
-            </div>
-            <div className="w-10 h-10 md:w-14 md:h-14 rounded-full border border-white bg-white shadow-md flex justify-center items-center">
-              <img
-                src={FlutterIcon}
-                alt="Flutter"
-                title="Flutter Dart"
-                className="w-7 h-7"
-              />
-            </div>
-            <div className="w-10 h-10 md:w-14 md:h-14 rounded-full border border-white bg-white shadow-md flex justify-center items-center">
-              <img
-                src={LinuxIcon}
-                alt="Linux"
-                title="Linux OS"
-                className="w-7 h-7"
-              />
-            </div>
-            <div className="w-10 h-10 md:w-14 md:h-14 rounded-full border border-white bg-white shadow-md flex justify-center items-center">
-              <img
-                src={PythonIcon}
-                alt="Python"
-                title="Python"
-                className="w-7 h-7"
-              />
-            </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
-      {/* Display Picture */}
-      <div className="w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 mx-auto flex-shrink-0 rounded-full border-4 border-amber shadow-lg overflow-hidden sm:order-first md:order-last lg:order-last">
-        <img
-          src={DisplayPicture}
-          alt="Display Picture"
-          className="object-cover w-full h-full"
-        />
+
+        {/* Profile Image Section */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 flex-shrink-0"
+        >
+          <img
+            src={DisplayPicture}
+            alt="Display Picture"
+            className="w-full h-full rounded-full border-2 border-amber shadow-md object-cover"
+          />
+        </motion.div>
       </div>
     </div>
   );
-}
+};
 
 export default Hero;

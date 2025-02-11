@@ -4,7 +4,8 @@ import PersonalWebsiteImage from "../assets/PersonalWebsite.png";
 import ExpenseTrackerImage from "../assets/ExpenseTracker.png";
 import Springleaf from "../assets/harbourbank.png";
 import CodeReview from "../assets/CodeReviewer.jpg";
-import MernExpense from "../assets/ExpenseTrackerMern.png";
+import StudentEcho from "../assets/home.png";
+import cocreate from "../assets/CoCreate.png";
 
 export default [
   {
@@ -46,7 +47,7 @@ export default [
     title: "Student Echo",
     description:
       "Paid project featuring beautiful UIUX, property listing, feature page and contact page",
-    imgUrl: "",
+    imgUrl: StudentEcho,
     stack: ["NextJS", "TailwindCSS", "TypeScript", "AWS"],
     link: "https://studentecho.com/",
   },
@@ -58,18 +59,19 @@ export default [
     link: "https://pr-ai-code-reviewer.vercel.app/",
   },
   {
-    title: "Expense Claim Tracker",
-    description: "In Progress",
-    imgUrl: MernExpense,
+    title: "CoCreate",
+    description: "Short-form content tool with AI Optimize",
+    imgUrl: cocreate,
     stack: [
-      "Mongo",
-      "Express",
-      "ReactJS",
-      "NodeJS",
-      "Vite",
-      "StyledComponent",
-      "JavaScript",
+      "FastAPI",
+      "Langchain",
+      "HuggingFace",
+      "Docker",
+      "Vercel",
+      "TypeScript",
+      "NextJS",
+      "TailwindCSS",
     ],
-    link: "",
+    link: "https://cocreate-io.vercel.app/",
   },
 ];

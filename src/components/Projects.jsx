@@ -27,6 +27,10 @@ import Vercel from "../assets/vercel.svg";
 import AWS from "../assets/aws.svg";
 import StyledComponentIcon from "../assets/styled-components.svg";
 import ProjectItems from "./Project-items";
+import FastAPIIcon from "../assets/fastapi.svg";
+import LangchainIcon from "../assets/langchain-text.svg";
+import HuggingFaceIcon from "../assets/huggingface.svg";
+import DockerIcon from "../assets/docker.svg";
 
 const stackIcons = {
   AWS: AWS,
@@ -55,6 +59,10 @@ const stackIcons = {
   Vercel: Vercel,
   TypeScript: TypeScriptIcon,
   StyledComponent: StyledComponentIcon,
+  FastAPI: FastAPIIcon,
+  Langchain: LangchainIcon,
+  HuggingFace: HuggingFaceIcon,
+  Docker: DockerIcon,
 };
 
 function Projects() {

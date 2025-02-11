@@ -1,51 +1,104 @@
 import PropTypes from "prop-types";
+import { motion } from "framer-motion";
 
-function AboutSection({ title, description, stackIcons, imageSrc, altText }) {
+const AboutSection = ({
+  title,
+  description,
+  stackIcons,
+  imageSrc,
+  altText,
+}) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center lg:mt-4">
-      <div className="lg:w-2/5 mx-auto">
-        <img src={imageSrc} alt={altText} className="w-full h-auto lg:h-200" />
-      </div>
-      <div className="lg:w-3/5 mt-4 lg:mt-0 lg:ml-4 mx-auto">
-        <div className="w-full p-4">
-          <h2 className="text-center sm:text-left md:text-left lg:text-left text-3xl md:text-4xl lg:text-5xl xl:text-5xl  font-bold mb-2">
-            {title}
-          </h2>
-          <div className="flex items-center flex-wrap gap-2 md:gap-4 lg:gap-6 mt-2 mb-2">
-            {stackIcons.map((icon, index) => (
+    <div className="py-12 sm:py-16 px-4 sm:px-6 bg-amber-50">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="max-w-6xl mx-auto"
+      >
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          {/* Image Section */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="order-2 lg:order-1"
+          >
+            <div className="relative">
+              <div className="absolute inset-0 bg-amber-100 rounded-2xl blur-xl opacity-20"></div>
               <img
-                key={index}
-                src={icon.src}
-                alt={icon.alt}
-                className={`w-7 h-7 sm:center sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12 2xl:w-14 2xl:h-14 text-blue transition duration-300 ease-in-out transform hover:scale-110`}
+                src={imageSrc}
+                alt={altText}
+                className="relative rounded-2xl shadow-lg w-full h-auto object-cover"
               />
-            ))}
-          </div>
-        </div>
-        <div className="lg:mt-0 lg:ml-4 mx-auto text-left">
-          <div className="w-full mx-auto">
-            <ul className="text-gray-700 text-sm md:text-sm lg:text-base mb-6 font-public-sans">
-              {description.map((point, index) => (
-                <li
+            </div>
+          </motion.div>
+
+          {/* Content Section */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="order-1 lg:order-2 space-y-6 sm:space-y-8"
+          >
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              {title}
+            </h2>
+
+            {/* Tech Stack Icons */}
+            <div className="flex flex-wrap gap-3">
+              {stackIcons.map((icon, index) => (
+                <motion.div
                   key={index}
-                  className="grid grid-cols-[auto,1fr] gap-x-4 items-start"
+                  whileHover={{ scale: 1.05 }}
+                  className="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl shadow-sm flex items-center justify-center hover:shadow-md transition-shadow duration-300"
                 >
-                  <span className="text-gray-700 font-bold">-</span>
-                  <span>{point}</span>
-                </li>
+                  <img
+                    src={icon.src}
+                    alt={icon.alt}
+                    className="w-8 h-8 sm:w-9 sm:h-9"
+                  />
+                </motion.div>
               ))}
-            </ul>
-          </div>
+            </div>
+
+            {/* Description Points */}
+            <div className="space-y-4">
+              {description.map((point, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-start gap-3"
+                >
+                  <span className="text-amber-500 text-sm sm:text-base">•</span>
+                  <p className="text-gray-700 text-sm sm:text-base lg:text-lg leading-relaxed">
+                    {point}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
-}
+};
 
 AboutSection.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.array.isRequired,
-  stackIcons: PropTypes.array.isRequired,
+  description: PropTypes.arrayOf(PropTypes.string).isRequired,
+  stackIcons: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   imageSrc: PropTypes.string.isRequired,
   altText: PropTypes.string.isRequired,
 };
